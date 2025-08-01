@@ -1,0 +1,71 @@
+# General
+*.log
+*.tmp
+*.bak
+*.swp
+*.DS_Store
+Thumbs.db
+
+# Terraform
+secrets.tf
+secrets.tfvars
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*.tfvars
+*.tfvars.json
+.terraform.lock.hcl
+
+# AWS
+.aws/
+.terraform/
+*.pem
+*.key
+*.config
+
+# Secrets
+secrets/
+*.secret
+*.key
+*.cert
+*.pfx
+*.pem
+*.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code
+.vscode/
+.history/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Miscellaneous
+*.sqlite3
+*.db
+*.sql
+*.tar
+*.zip
+*.gz
+*.7z
+*.rar
+*.bak
+
+# Logs
+logs/
+*.log
+*.log.*
+nohup.out
+
+# Artifacts
+*.artifact.zip
+*.whl

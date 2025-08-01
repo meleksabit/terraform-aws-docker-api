@@ -1,0 +1,39 @@
+# Terraform state and backup files
+*.tfstate
+*.tfstate.backup
+*.tfplan
+
+# Terraform internal directories
+.terraform/
+
+# Logs and debug artifacts
+*.log
+crash.log
+*.out
+*.err
+
+# AWS credentials and sensitive files
+.aws/
+*.pem
+*.key
+*.crt
+*.env
+.env.*
+credentials.json
+secrets/
+**/credentials.tfvars
+
+# Editor/OS/CI-related
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitattributes
