@@ -37,13 +37,13 @@ variable "AWS_SECRET_ACCESS_KEY" {
 variable "vpc_cidr" {
   description = "CIDR block for the VPC"
   type        = string
-  default     = "10.0.0.0/28"
+  default     = "10.0.0.0/26"
 }
 
 variable "public_subnet_cidrs" {
   description = "List of public subnet CIDRs"
   type        = list(string)
-  default     = ["10.0.0.0/28", "10.0.0.16/28"]
+  default     = ["10.0.0.0/28", "10.0.0.32/28"]
 }
 
 variable "ecs_cluster_name" {
