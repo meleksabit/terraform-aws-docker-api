@@ -70,6 +70,11 @@ variable "alb_target_group_arn" {
   type        = string
 }
 
+variable "alb_listener_arn" {
+  description = "ALB Listener ARN for routing traffic"
+  type        = string
+}
+
 variable "ecs_execution_role_arn" {
   description = "IAM role for ECS task execution (e.g. pulling image, writing logs)"
   type        = string

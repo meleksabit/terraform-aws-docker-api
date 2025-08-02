@@ -5,13 +5,13 @@
 variable "vpc_cidr" {
   description = "CIDR block for the VPC"
   type        = string
-  default     = "10.0.0.0/28"
+  default     = "10.0.0.0/26"
 }
 
 variable "public_subnet_cidrs" {
   description = "List of CIDRs for public subnets"
   type        = list(string)
-  default     = ["10.0.0.0/28", "10.0.0.16/28"]
+  default     = ["10.0.0.0/28", "10.0.0.32/28"]
 }
 
 # ----------------------------------------------------

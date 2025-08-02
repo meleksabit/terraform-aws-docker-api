@@ -22,6 +22,7 @@ module "compute" {
   alb_subnets          = module.network.public_subnet_ids
   alb_security_group   = module.network.security_group_id
   alb_target_group_arn = module.network.alb_target_group_arn
+  alb_listener_arn     = module.network.alb_listener.arn
 
   ecs_execution_role_arn = var.ecs_execution_role_arn
   aws_region             = var.aws_region
