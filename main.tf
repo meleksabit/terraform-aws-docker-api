@@ -15,12 +15,12 @@ module "compute" {
   container_port = 3000
   desired_count  = 1
 
-  vpc_id             = module.network.vpc_id
-  public_subnet_ids  = module.network.public_subnet_ids
-  security_group_ids = [module.network.security_group_id]
+  vpc_id            = module.network.vpc_id
+  public_subnet_ids = module.network.public_subnet_ids
 
   alb_subnets          = module.network.public_subnet_ids
   alb_security_group   = module.network.security_group_id
+  ecs_tasks_sg_id      = module.network.ecs_tasks_sg_id
   alb_target_group_arn = module.network.alb_target_group_arn
   alb_listener_arn     = module.network.alb_listener.arn
 

@@ -36,3 +36,8 @@ output "alb_listener" {
   description = "ALB Listener"
   value       = aws_lb_listener.this
 }
+
+output "ecs_tasks_sg_id" {
+  description = "Security group ID for ECS tasks"
+  value       = aws_security_group.ecs_tasks.id
+}

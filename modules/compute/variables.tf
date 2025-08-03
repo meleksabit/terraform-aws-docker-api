@@ -36,6 +36,11 @@ variable "desired_count" {
   default     = 1
 }
 
+variable "ecs_tasks_sg_id" {
+  description = "Security group for ECS tasks"
+  type        = string
+}
+
 # ----------------------------------
 # Networking & IAM
 # ----------------------------------
@@ -47,11 +52,6 @@ variable "vpc_id" {
 
 variable "public_subnet_ids" {
   description = "List of public subnet IDs"
-  type        = list(string)
-}
-
-variable "security_group_ids" {
-  description = "List of security group IDs for ECS tasks"
   type        = list(string)
 }
 
