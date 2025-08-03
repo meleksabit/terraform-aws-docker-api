@@ -12,7 +12,7 @@ module "compute" {
   cluster_name   = "hello-api-cluster"
   docker_image   = "nmatsui/hello-world-api"
   container_name = "hello-api"
-  container_port = 80
+  container_port = 3000
   desired_count  = 1
 
   vpc_id             = module.network.vpc_id

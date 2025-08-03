@@ -73,8 +73,8 @@ resource "aws_security_group" "allow_http" {
   vpc_id      = aws_vpc.this.id
 
   ingress {
-    from_port   = 80
-    to_port     = 80
+    from_port   = 3000
+    to_port     = 3000
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"] # Recommendation: Restrict in prod
   }
@@ -113,7 +113,7 @@ resource "aws_lb" "this" {
 
 resource "aws_lb_target_group" "this" {
   name        = "hello-target-group"
-  port        = 80
+  port        = 3000
   protocol    = "HTTP"
   target_type = "ip"
   vpc_id      = aws_vpc.this.id

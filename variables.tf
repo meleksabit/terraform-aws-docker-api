@@ -73,7 +73,7 @@ variable "container_image" {
 variable "container_port" {
   description = "Port container listens on"
   type        = number
-  default     = 80
+  default     = 3000
 }
 
 variable "desired_count" {
