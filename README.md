@@ -89,7 +89,7 @@ Below you can find instructions for setting up ``Terraform Cloud``, but you can 
    - Use terraform init
 3. **Set Variables**
     - In Terraform Cloud → Workspace → Variables
-      - Mark AWS credentials as Terraform variables:
+      - Define ``AWS credentials`` as ``Terraform variables`` and mark them as ``sensitive``:
       ```bash
       AWS_ACCESS_KEY_ID
       AWS_SECRET_ACCESS_KEY
