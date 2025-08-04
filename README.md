@@ -1,6 +1,6 @@
 # 🐋 Dockerized Hello World API on AWS with Terraform
 
-## This project provisions a cloud infrastructure on AWS using Terraform to deploy a Dockerized API (`nmatsui/hello-world-api`) with high availability and scalability via **AWS Fargate**, **Application Load Balancer**, and modularized **Terraform configuration**.
+## This project provisions a cloud infrastructure on AWS using Terraform to deploy a Dockerized API [nmatsui/hello-world-api](https://hub.docker.com/r/nmatsui/hello-world-api) with high availability and scalability via **AWS Fargate**, **Application Load Balancer**, and modularized **Terraform configuration**.
 
 ## System Architecture Diagram:
 <p align="center">
